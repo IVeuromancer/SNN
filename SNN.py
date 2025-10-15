@@ -12,11 +12,16 @@ import snntorch.spikeplot as splt
 from snntorch import functional as SF
 from snntorch import utils
 import matplotlib.pyplot as plt
-from IPython.display import HTML
-from IPython.display import display
+# from IPython.display import HTML
+# from IPython.display import display
 import numpy as np
 import torchdata
 import os
-from ipywidgets import IntProgress
+# from ipywidgets import IntProgress
 import time
 import statistics
+
+root = "/home/jane_simko/SNN/STMNIST_dataset"
+os.listdir(root)
+dataset = tonic.prototype.datasets.STMNIST(root=root,
+                                           keep_compressed = False, shuffle = False)
